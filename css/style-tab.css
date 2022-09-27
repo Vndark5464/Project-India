@@ -82,3 +82,13 @@ h2{
     float: left;
     margin-left: 110px;
 }
+.body-education{
+    box-sizing: border-box;
+    height: 1200px;
+    width: 1300px;
+    margin: auto;
+}
+.text-body-education{
+    margin-left: 80px;
+    font-size: 20px;
+}
