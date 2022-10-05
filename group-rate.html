@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Group Rates</title>
+    <link rel="icon" href="images/head-icon.png" type="image/ icon type"/>
+    <!-- File css phần layout + trang home -->
+    <link rel="stylesheet" href="css/layout.css"/>
+    <!-- File css phần content các trang khác -->
+    <link rel="stylesheet" href="css/section-other-pages.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style-tab.css"/>
+
+
+    <!-- Lấy font google -->
+    <!-- font sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Lấy icon từ Font Awesome -->
+    <link rel="stylesheet" href="libs/fontawesome/css/all.css"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+</head>
+<body>
+<div id="loader">
+    <div class="circle">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+    </div>
+</div>
+<div id="top">
+    <!-- A) PHẦN HEADER -->
+    <header class="section header">
+        <div class="main-header">
+            <div class="container">
+                <div class="site-logo">
+                    <a href="home.html"><img class="logo header" src="images/logo-home.png"/></a>
+                </div>
+                <div class="categories-nav">
+                    <ul class="menu-header-categories">
+                        <li class="menu-item"><a href="..."><img src="images/icon-gallery.png"/>Thư viện</a></li>
+                        <li class="menu-item"><a href="..."><img src="images/icon-video.png"/>Videos</a></li>
+                        <li class="menu-item"><a href="..."><img src="images/about-us-icon.jpg"/>Về chúng tôi</a></li>
+                        <li class="menu-item"><a href="..."><img src="images/icon-map.png"/>Bản đồ</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form method="get" action="#" class="search-form">
+                        <input required type="text" placeholder="Search...." name="search"/>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-header" id="sticky-header">
+            <div class="container">
+                <div class="site-logo">
+                    <a href="home.html"><img class="logo header" src="images/logo-home.png"/></a>
+                </div>
+                <div class="categories-nav">
+                    <ul class="menu-header-categories">
+                        <li class="menu-item"><a href="..."><img src="images/icon-gallery.png"/>Gallery</a></li>
+                        <li class="menu-item"><a href="..."><img src="images/icon-video.png"/>Videos</a></li>
+                        <li class="menu-item"><a href="..."><img src="images/about-us-icon.jpg"/>About Us</a></li>
+                        <li class="menu-item"><a href="..."><img src="images/icon-map.png"/>Map</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form method="get" action="#" class="search-form">
+                        <input required type="text" placeholder="Search...." name="search"/>
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- B) PHẦN NAV -->
+    <nav class="section nav">
+        <div class="container">
+            <div class="dropdown">
+                <button class="dropbtn"><a href="visit.html">VISIT <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="visit/our-mission.html">Our Mission</a>
+                    <a href="...">Hour And Admission</a>
+                    <a href="...">Promotions</a>
+                    <a href="...">Experiences</a>
+                    <a href="...">Feeding Schedule</a>
+                    <a href="...">Upcoming Events</a>
+                    <a href="...">Join Our Team</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="...">EXPLORE <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="...">Animals & Exhibits</a>
+                    <a href="...">Penguin Camp</a>
+                    <a href="...">Our Partners</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="...">GROUPS & EDUCATION <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="experiences.html">EXPERIENCES</a>
+                    <a href="groups.html">GROUPS</a>
+                    <a href="education.html">EDUCATION</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="...">ADOPTION & ENCOUNTERS <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="...">ADOPTION ANIMAL</a>
+                    <a href="...">ANIMAL ENCOUNTER</a>
+                    <a href="...">ANIMAL PROGRAMS</a>
+                    <a href="...">ANIMAL ART</a>
+                    <a href="...">PROMOTIONS</a>
+                    <a href="...">UPCOMING EVENT</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="...">EVENT <i class="fa-solid fa-angle-down"></i></a></button>
+                <div class="dropdown-content">
+                    <a href="...">30TH ANNIVERSARY</a>
+                    <a href="...">BOARDWALK EVENT</a>
+                    <a href="...">UPCOMING EVENT</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="auto-chat">
+
+        <div class = chat-bot>
+            <button class="nut-mo-chatbox" onclick="moForm()"><img src="images/chatbot.png" width="60px" height="50px"></button>
+            <div class="Chatbox" id="myForm">
+                <button type="button" class="btn nut-dong-chatbox" onclick="dongForm()">X</button>
+                <div class="Boxchat">
+                    <iframe src="https://web.powerva.microsoft.com/environments/Default-447080b4-b9c6-4b0b-92fd-b543a68b4e97/bots/new_bot_45bb846cee19405b89783f2967bdb5a0/webchat" frameborder="0" style="width: 100%; height: 400px;"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="title-header" style="margin-top: 50px"><h1><span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span><span>&nbsp;</span><span>T</span><span>O</span><span>&nbsp;</span><span>J</span><span>E</span><span>N</span><span>K</span><span>I</span><span>N</span><span>S</span><span>O</span><span>N</span><span>'</span><span>S</span><span>&nbsp;</span><span>G</span><span>R</span><span>O</span><span>U</span><span>P</span><span>&nbsp;</span><span>G</span><span>R</span><span>O</span><span>U</span><span>P</span><span>&nbsp;</span><span>-</span><span>&nbsp;</span><span>R</span><span>A</span><span>T</span><span>E</span><span>S</span></h1></div>
+<div class="body-group">
+    <ul class="menu-group-2">
+        <li><a href="field-trips.html">Field Trips</a></li>
+        <li><a href="group-rate.html">Group Rates</a></li>
+        <li><a href="focus-program.html">Focus Programs</a></li>
+    </ul>
+    <section class="video_poster">
+        <div class="hero_video" >
+            <img src="images/aquarium-group-e1523992494491.jpg">
+            <h1 class="entry-title" itemprop="headline">Group Rates</h1>
+        </div>
+    </section>
+    <div class="body-group">
+        <p>Jenkinson’s Aquarium is a unique facility for schools, scouts, churches, camps and other organizations looking for a fun-filled learning experience. Special group rates include a guided tour conducted by our marine education specialists.</p>
+        <p>Availability: Year Round “Off- Season” Recommended (September through February)<br>
+            Booking: In Advance – at least Two Weeks, Space is Limited – Book Early!<br>
+            Call: Group Sales Monday – Friday 7am-3pm 732-892-3274<br>
+            E-Mail: <a href="mailto:groupsales.jenkinsons@comcast.net">groupsales.jenkinsons@comcast.net</a><br>
+            Lunch: Options Available September through June. Must be Arranged with Group Sales Office when Booking Tour. Focus Programs Available September through February ONLY<br>
+            Extras: Beach, Fun House and Amusements may be added at an additional cost during our summer season.<br>
+            Rates: (effective October 2020)</p>
+        <p>Prices are as follows:</p>
+        <ul>
+            <li>Seniors:&nbsp; &nbsp;$8.50 (65 and up)</li>
+            <li>Adults:&nbsp; &nbsp; &nbsp;$12.50</li>
+            <li>Children:&nbsp; $8.50 (pre-K through 8th grade)</li>
+        </ul>
+    </div>
+</div>
+<footer class="section footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-6 col-lg-3 col-12 footer-nav-logo widget">
+                <img src="images/jenkinsons-logo.png" />
+                <p class="footer-slogan">
+                    Nếu bạn có bất kỳ câu hỏi nào, vui lòng liên hệ với chúng tôi
+                </p>
+                <h3><a href="/about-us.html" title="Liên hệ với chúng tôi">Jenkinson's Aquarium </a></h3>
+
+                <p class="evo-in">300 Ocean Avenue, Point Pleasant Beach, NJ 08742|732-892-0600</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3052.1312257647837!2d-74.03868368557448!3d40.09478708308207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c18621bb20dec7%3A0x2591b3f455f36651!2sJenkinson&#39;s%20Aquarium!5e0!3m2!1svi!2s!4v1663984944074!5m2!1svi!2s" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-md-6 col-12 ant-mailchimp">
+                <div class="ant-newsletter-title">
+                    <div style="color:black" class="title">ĐĂNG KÍ NHẬN THÔNG TIN VÀ GỬI PHẢN HỒI</div>
+                    <p>Hãy cho chúng tôi biết đánh giá và xếp hạng của bạn về chúng tôi</p>
+                    <p>Nhận thông tin mới nhất, tin khuyến mãi và nhiều hơn nữa.</p>
+                </div>
+                <div class="ant-mailchim-form">
+
+                    <form method="get" action="#" class="signup-bar">
+                        <input class="form-control" required type="text" placeholder="Your full name" name="full-name"/>
+                        <input class="form-control" required type="email" placeholder="Your email address" name="email-address"/>
+                        <label>Your Feedback!</label>
+                        <textarea name="introduction" rows="5" cols="60"></textarea>
+                        <button class="form-button-1" type="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-6 col-lg-3 col-12 footer-nav-menu widget">
+                <p class="footer-title">LÊN KẾ HOẠCH CHO CHUYẾN THĂM CỦA BẠN</p>
+                <div class="footer-menu">
+                    <a href="/visit/upcoming-even.html" title="Event" rel="nofollow">Các sự kiện sắp tới</a>
+                    <a href="/kinh-nghiem.html" title="Kinh nghiệm" rel="nofollow">Kinh nghiệm</a>
+                    <a href="/collections/all" title="Bảng giá" rel="nofollow">Giá cả & Giờ</a>
+                    <a href="/groups.html" title="Map" rel="nofollow">Bản đồ toàn bộ khu vực </a>
+                    <a href="/tuyen-dung.html" title="Tuyển dụng" rel="nofollow">Gia nhập với đội ngũ của chúng tôi</a>
+                    <a href="/about-us.html" title="About Us" rel="nofollow">Liên hệ với chúng tôi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright text-center">
+
+        Tạo nụ cười cho nhiều thế hệ
+
+        <span class="cpn">|</span>© 2022 | <a href="" title="Sapo" target="_blank" rel="nofollow">Jenkinson's Aquarium</a> được hỗ trợ bởi Group 4 |
+        Chính sách bảo mật
+
+        <div class="back-to-top text-center show" title="Lên đầu trang"><a href="#top"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;" xml:space="preserve"><path d="M282.082,195.285L149.028,62.24c-1.901-1.903-4.088-2.856-6.562-2.856s-4.665,0.953-6.567,2.856L2.856,195.285   C0.95,197.191,0,199.378,0,201.853c0,2.474,0.953,4.664,2.856,6.566l14.272,14.271c1.903,1.903,4.093,2.854,6.567,2.854   c2.474,0,4.664-0.951,6.567-2.854l112.204-112.202l112.208,112.209c1.902,1.903,4.093,2.848,6.563,2.848   c2.478,0,4.668-0.951,6.57-2.848l14.274-14.277c1.902-1.902,2.847-4.093,2.847-6.566   C284.929,199.378,283.984,197.188,282.082,195.285z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"></path></svg></a>
+        </div>
+    </div>
+</footer>
+<!-- Js Loader-->
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<!-- JS phần Modal -->
+<script type="text/javascript" src="js/modal.js"></script>
+<!-- JS Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<!-- JS phần Sticky header -->
+<script type="text/javascript" src="js/sticky-header.js"></script>
+<script type="text/javascript" src="js/style-tab.js"></script>
+</body>
+</html>

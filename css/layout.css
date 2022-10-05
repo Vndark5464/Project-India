@@ -10,9 +10,6 @@ body{
     line-height: 1.25;
     /*background-color: #e7e7e7;*/
     font-family: 'Josefin Sans', sans-serif;
-    box-sizing: border-box;
-    width: auto;
-    height: auto;
 }
 img{
     max-width: 100%;
@@ -30,13 +27,16 @@ video{
     width: 1200px;
     margin: 0 auto;
 }
+.main{
+    font-family: 'Josefin Sans', sans-serif;
+}
 
 
 /* ------ đổi màu khi chỉ vào -------- */
 a:link, a i:link{text-decoration: none; color: black}
 a:visited, a i:visited{text-decoration: none}
-a:hover, a i:hover{text-decoration: blink; color: #0b5ed7; cursor: pointer}
-a:active, a i:active{text-decoration: none; color: #0a53be; cursor: pointer}
+a:hover, a i:hover{text-decoration: blink; color: steelblue; cursor: pointer}
+a:active, a i:active{text-decoration: none; color: steelblue; cursor: pointer}
 
 
 
@@ -88,7 +88,7 @@ header .container{
     padding: 10px;
 }
 .search-form:hover{
-    border:1px solid #4169e1;
+    border:2px solid steelblue;
     border-radius: 12px;
 }
 .search-form input{
@@ -109,6 +109,9 @@ header .container{
     font-size: 20px;
     transform: translateY(1px);
 }
+.link-header{
+    color: black;
+}
 /* --------------- A3) Phần STICKY-HEADER --------------- */
 .sticky-header.sticky{
     position: fixed;
@@ -120,7 +123,7 @@ header .container{
 }
 .sticky-header{
     padding: 0;
-    box-shadow: 0 3px 10px royalblue;
+    box-shadow: 0 3px 10px steelblue;
     display: none;
 }
 .sticky-header .site-logo{
@@ -163,7 +166,7 @@ header .container{
     padding: 10px;
 }
 .sticky-header .search-form:hover{
-    border:1px solid royalblue;
+    border:2px solid steelblue;
     border-radius: 12px;
 }
 .sticky-header .search-form input{
@@ -190,10 +193,10 @@ nav{
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 600;
-    border-top: 1px solid #4169e1;
+    border-top: 1px solid black;
     box-sizing: border-box;
     max-width: 100%;
-    background-color: skyblue;
+    background-color: #36648B;
     text-align: center;
 }
 .nav .container{
@@ -209,10 +212,13 @@ nav{
     width: 20%;
     padding-top: 14px;
 }
+.link-nav{
+    color: white;
+}
 /* ------------ Style menu dropdown ---------------*/
 .dropbtn{
-    background-color: skyblue;
-    color: #212121;
+    background-color: #36648B;
+    color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -225,28 +231,29 @@ nav{
     display: inline-block;
 }
 .dropdown-content{
-    background-color: #ffffff;
+    background-color: white;
     display: none;
     position: absolute;
     min-width: 200px;
     padding: 16px 0;
-    border-left: 5px solid skyblue;
+    border-left: 5px solid steelblue;
     z-index: 1;
 }
 .dropdown-content a{
     padding: 2px 16px;
     text-decoration: none;
     display: block;
+    color: black;
 
 }
 .dropdown-content a:hover{
-    color: #4169e1;
+    color: steelblue;
 }
 .dropdown:hover .dropdown-content {
     display: block;
 }
 .dropdown:hover .dropbtn{
-    color: #4169e1;
+    color: steelblue;
 }
 
 /* Secsion main */
@@ -263,15 +270,32 @@ nav{
     font-size: 24px;
 }
 .page-cta_button{
-    width: 20%;
-    height: 10%;
-    background-color: skyblue;
+    width: 100%;
+    height: 100%;
+    background-color: #36648B;
     color: #212121;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 18px;
     font-weight: 600;
-    border: 2px solid royalblue;
+    border: 2px solid steelblue;
     text-align: center;
+    border-radius: 50%;
+
+}
+.page-cta_action{
+    width: 20%;
+    height: 30px;
+    margin-left: 40%;
+}
+.page-cta_button a{
+    color: white;
+}
+.page-cta_button:hover{
+    background-color: white;
+    border: 2px solid #36648B;
+}
+.page-cta_button a:hover{
+    color: black;
 }
 
 
@@ -280,12 +304,12 @@ nav{
 /* FOOTER*/
 footer {
     margin-top: 35px;
-    background-color: skyblue;
+    background-color: #36648B;
     background-position: top center;
     background-repeat: no-repeat;
     padding: 70px 0 0;
     font-family: 'Josefin Sans', sans-serif;
-    color: black;
+    color: white;
     font-size: 16px;
 
 
@@ -297,18 +321,18 @@ footer .ant-mailchimp {
 }
 footer .ant-mailchimp .ant-newsletter-title {
     padding-right: 15px;
-    border-right: 2px solid #000000;
+    border-right: 2px solid white;
 }
 footer .ant-mailchimp .ant-newsletter-title .title {
     font-size: 24px;
     font-weight: 600;
-    color: royalblue;
+    color: #36648B;
     margin-top: 0
 }
 
 footer .ant-mailchimp .ant-newsletter-title p {
     margin-bottom: 0;
-    color: black;
+    color: white;
     font-size: 16px
 }
 
@@ -389,7 +413,7 @@ footer .ant-mailchimp .ant-mailchim-form form button {
 footer .ant-mailchimp .ant-mailchim-form form button:hover,
 footer .ant-mailchimp .ant-mailchim-form form button:focus {
     color: black;
-    background-color: royalblue;
+    background-color: #36648B;
     border: none;
     outline: none;
     box-shadow: none
@@ -414,18 +438,18 @@ footer  .footer-nav-logo .footer-slogan {
 }
 
 footer .footer-nav-logo .footer-slogan a {
-    color: royalblue;
+    color: white;
     font-weight: 700
 }
 
 footer .footer-nav-logo .footer-slogan a:hover,
 footer .footer-nav-logo .footer-slogan a:focus {
-    color: royalblue;
+    color: steelblue;
 }
 
 footer .footer-nav-logo .footer-tel,
 footer .footer-nav-logo .evo-in {
-    color: black;
+    color: white;
     font-weight: 700;
     margin-bottom: 8px
 }
@@ -434,7 +458,7 @@ footer .footer-nav-logo .footer-tel a:hover,
 footer .footer-nav-logo .footer-tel a:focus,
 footer .footer-nav-logo .evo-in a:hover,
 footer .footer-nav-logo .evo-in a:focus {
-    color: royalblue;
+    color: steelblue;
 }
 
 footer .footer-nav-logo .social {
@@ -445,7 +469,7 @@ footer .footer-nav-logo .social a {
     height: 40px;
     width: 40px;
     line-height: 40px;
-    background-color: black;
+    background-color: white;
     border-radius: 50%;
     display: inline-block;
     position: relative
@@ -463,7 +487,7 @@ footer .footer-nav-logo .social a svg {
 }
 
 footer .footer-nav-logo .social a svg path {
-    fill: #292a2d
+    fill: white;
 }
 
 footer .footer-nav-logo .social a+a {
@@ -471,11 +495,11 @@ footer .footer-nav-logo .social a+a {
 }
 
 footer .footer-nav-logo .social a:hover {
-    background-color: royalblue;
+    background-color: #36648B;
 }
 
 footer .footer-nav-logo .social a:hover svg path {
-    fill: #292a2d
+    fill: white;
 }
 
 @media (max-width: 767px) {
@@ -486,7 +510,7 @@ footer .footer-nav-logo .social a:hover svg path {
 
 footer .footer-nav-menu .footer-title {
     display: block;
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: 700
 }
@@ -494,12 +518,12 @@ footer .footer-nav-menu .footer-title {
 footer .footer-nav-menu .footer-menu a {
     display: block;
     font-size: 15px;
-    color: black;
+    color: white;
 }
 
 footer .footer-nav-menu .footer-menu a:hover,
 footer .footer-nav-menu .footer-menu a:focus {
-    color: royalblue;
+    color: black;
 }
 
 footer .footer-nav-menu .footer-menu a+a {
@@ -510,29 +534,29 @@ footer .footer-nav-menu .footer-menu a+a {
     border-top: 1px solid #3b3c3e;
     padding: 15px 0;
     font-size: 14px;
-    color: black;
+    color: white;
 }
 
 .copyright a {
-    color: black;
+    color: white;
 }
 
 .copyright a:hover,
 .copyright a:focus {
-    color: royalblue;
+    color: black;
 }
 
 .back-to-top {
     position: absolute;
     right: 10px;
-    bottom: 120px;
+    bottom: 60px;
     font-size: 14px;
     cursor: pointer;
-    color: black;
+    color: white;
     top: auto !important;
     height: 40px;
     width: 40px;
-    background-color: #000;
+    background-color: #36648B;
     border: 2px solid #fff;
     line-height: 36px;
     border-radius: 4px;
@@ -545,8 +569,8 @@ footer .footer-nav-menu .footer-menu a+a {
 
 .back-to-top:hover {
     color: white;
-    background-color: skyblue;
-    border-color: royalblue;
+    background-color: steelblue;
+    border-color: #36648B;
 }
 
 .back-to-top.show {

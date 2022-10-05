@@ -1,13 +1,182 @@
+.title{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
 /*-----VISIT-----*/
 .visit-content{
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
     font-weight: 600;
-    color: skyblue;
+    color: steelblue;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .link-content{
     margin-top: 15px;
+}
+.link-content a:hover{
+    color: royalblue;
+}
+.visit-content a:hover{
+    color: royalblue;
+}
+/*----animal & exhibits----*/
+.explore1 h1{
+    width:100%;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 600;
+    font-size:2.5em;
+}
+.explore2 p{
+    padding: 30px;
+    background: #f2f4f4;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+    font-size:1.3em;
+}
+.explore3{
+    display: flex;
+    float: left;
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.explore1 div{
+    margin-top:3%;
+}
+h2{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+p{
+    font-size: 25px;
+    font-weight: 400;
+
+}
+/*----danh----*/
+.container-sm{
+}
+.danh1{
+    margin-top: 10px;
+}
+.h4{
+    text-align: justify;
+}
+.col-3 a{
+    /*text-align: center;*/
+    /*border: 1px solid royalblue;*/
+    /*background: royalblue  ;*/
+    /*color: white;*/
+    background-color:#0a53be;
+    color: white;
+    padding: 14px 25px;
+
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+
+}
+.col-3 a:hover{
+    background: white;
+    color: #0a58ca;
+    border: 2px solid #0b5ed7;
+
+}
+.a2{
+    text-align: center;
+    margin-top:20px;
+}
+.a3 a{
+    max-width: 150px;
+    max-height:60px ;
+    margin-left: 95px;
+    margin-top: 20px;
+}
+/*-----Explore----*/
+section{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.logo-content{
+    border-radius: 100%;
+    margin-left: 30%;
+}
+.view-details{
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+    border-radius: 20%;
+}
+.pct{
+    padding-top: 150px;
+
+}
+.pct-1{
+    color: #333333;
+    font-size: 20px;
+}
+/*-----MAP----*/
+.title-map{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    color: white;
+}
+.content-map{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+.map{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*---out mission---*/
+.page-content{
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/*----Giá và giờ nhập học---*/
+.container-md{
+    width: 1200px;
+    margin-bottom: 30px;
+}
+.page-content{
+    background-color: white;
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content{
+    line-height: 1.25;
+}
+.button{
+    color: white;
+    font-size: 20px;
+    border: 2px solid #36648B;
+    width: 50%;
+    background-color: steelblue;
+    margin-left: 25%;
+    text-align: center;
+    margin-top: 50px;
+}
+.button a{
+    color: white;
+}
+.button:hover{
+    background-color: white;
+    border: 2px solid #36648B;
+}
+.button a:hover{
+    color: black;
 }
